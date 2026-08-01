@@ -1,10 +1,17 @@
-﻿# my-portfolio
+﻿# My Portfolio
 
-Personal portfolio website built with React and Framer Motion.
+**Developer portfolio website built with React, Framer Motion, and responsive design.**
 
 ## Overview
 
-This repository contains a developer portfolio with animations, responsive design, and contact form integration.
+This repository contains a portfolio website for showcasing projects, skills, and contact information. It includes:
+
+- Animated hero section with 3D hover effects
+- Dark/light theme toggle
+- Responsive project cards with hover motion
+- Skills section with animated skill badges
+- Contact form with Formspree integration
+- Deployment on Vercel
 
 ## Run locally
 
