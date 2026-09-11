@@ -800,6 +800,113 @@ main > section {
   z-index: 2;
 }
 
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  :root {
+    --section-padding: 64px;
+    --section-gap: 16px;
+  }
+
+  .navbar {
+    padding: 12px 18px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .hero {
+    padding: 56px 16px 40px;
+  }
+
+  .hero-photo-frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+  }
+
+  .hero-photo-wrap {
+    flex: 0 0 220px;
+  }
+
+  .hero-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .hero-cta .btn {
+    min-width: 140px;
+    padding: 10px 18px;
+  }
+
+  .social-icon,
+  .contact-social-link {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .hero-actions {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 48px;
+    --section-gap: 12px;
+  }
+
+  .hero-photo-frame {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+  }
+
+  .hero-photo-wrap {
+    flex: 0 0 160px;
+  }
+
+  .hero-name {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-cta .btn {
+    min-width: 120px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icon,
+  .contact-social-link {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-menu {
+    width: 260px;
+  }
+}
+
 .project-card:hover .project-card-glow {
   opacity: 1;
 }
@@ -871,6 +978,7 @@ main > section {
   border: 1px solid rgba(99, 102, 241, 0.18);
   font-weight: 500;
 }
+
 
 .project-link {
   font-size: 0.85rem;
@@ -1266,6 +1374,22 @@ main > section {
 
   .hero-typing,
   .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero-photo-wrap {
+    order: -1;
+  }
+
+  .hero-social {
+    position: static;
+    margin-top: 6px;
     justify-content: center;
   }
 
