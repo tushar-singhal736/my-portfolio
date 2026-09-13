@@ -168,7 +168,7 @@ Send Message -&gt;
 <div className="contact-social-row">
 
           <a
-            href="https://github.com/tushar-singhal736"
+            href="https://github.com/tushar-singhal736/my-portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-social-link"
@@ -178,7 +178,7 @@ Send Message -&gt;
           </a>
 
           <a
-            href="https://www.linkedin.com/in/tushar-singhal-a51a40339/"
+            href="https://www.linkedin.com/in/tushar-singhal-989376434/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-social-link"

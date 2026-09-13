@@ -36,8 +36,8 @@ export const profile = {
   contactFormUrl: 'https://formspree.io/f/mzdabeon',
 
   links: [
-    { name: "GitHub", href: "https://github.com/tushar-singhal736", icon: "github" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/tushar-singhal-a51a40339/", icon: "linkedin" }
+    { name: "GitHub", href: "https://github.com/tushar-singhal736/my-portfolio", icon: "github" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/tushar-singhal-989376434/", icon: "linkedin" }
   ],
 
   // ----- SKILLS -----
@@ -70,7 +70,7 @@ export const profile = {
       title: 'SuperNova - E-Commerce',
       desc: 'Full-stack e-commerce platform with product listings, cart, checkout, user authentication, and admin dashboard.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Redux'],
-      link: 'https://github.com/tushar-singhal736',
+      link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
       image: '/supernova.png',
     },
@@ -78,7 +78,7 @@ export const profile = {
       title: 'Quizz - CS Quiz Platform',
       desc: 'Interactive quiz platform covering DSA, DBMS, OS, Networks & more. Features timed quizzes, leaderboard, and 375+ questions.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
-      link: 'https://github.com/tushar-singhal736',
+      link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)',
       image: '/quizapp.png',
     },
@@ -86,7 +86,7 @@ export const profile = {
       title: 'Portfolio Website',
       desc: 'Personal developer portfolio with smooth Framer Motion animations, responsive design, dark theme, and contact form integration.',
       tech: ['React', 'Framer Motion', 'CSS', 'Formspree'],
-      link: 'https://github.com/tushar-singhal736',
+      link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
       image: '/image.png',
     },

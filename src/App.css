@@ -269,6 +269,31 @@ main > section {
   min-width: 280px;
 }
 
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #86efac;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.availability-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.18);
+}
+
 .hero-name {
   font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 800;
@@ -1198,16 +1223,17 @@ main > section {
   border-color: #10b981;
 }
 
-.footer {
+.site-footer {
   background: #020617;
-  text-align: center;
-  padding: 40px 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+  padding: 24px 20px 36px;
 }
 
-.footer p {
+.site-footer p {
   font-size: 0.88rem;
-  color: rgba(148, 163, 184, 0.5);
+  color: rgba(148, 163, 184, 0.8);
+  letter-spacing: 0.02em;
 }
 
 .container {
@@ -1297,6 +1323,21 @@ main > section {
 
 .light-mode .project-card-content h3 {
   color: #0f172a;
+}
+
+.light-mode .availability-badge {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #15803d;
+}
+
+.light-mode .site-footer {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.light-mode .site-footer p {
+  color: #475569;
 }
 
 .light-mode .contact-input,

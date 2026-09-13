@@ -10,39 +10,35 @@ import './App.css';
 
 function App() {
 
-  // DEFAULT DARK MODE
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('portfolioTheme');
+  const getStoredTheme = () => {
+    if (typeof window === 'undefined') return true;
 
-    // agar pehli baar open ho to dark mode
-    return saved ? saved === 'dark' : true;
-  });
+    try {
+      const saved = window.localStorage.getItem('portfolioTheme');
+      return saved ? saved === 'dark' : true;
+    } catch (error) {
+      return true;
+    }
+  };
 
-  // THEME APPLY
+  const [isDarkMode, setIsDarkMode] = useState(getStoredTheme);
+
   useEffect(() => {
-
-    localStorage.setItem(
-      'portfolioTheme',
-      isDarkMode ? 'dark' : 'light'
-    );
-
-    if (isDarkMode) {
-
-      document.documentElement.classList.remove('light-mode');
-      document.documentElement.classList.add('dark-mode');
-
-      // body background bhi dark
-      document.body.style.background = '#0f172a';
-
-    } else {
-
-      document.documentElement.classList.remove('dark-mode');
-      document.documentElement.classList.add('light-mode');
-
-      // light mode background
-      document.body.style.background = '#ffffff';
+    try {
+      window.localStorage.setItem('portfolioTheme', isDarkMode ? 'dark' : 'light');
+    } catch (error) {
+      // Ignore storage access issues in restricted environments.
     }
 
+    if (isDarkMode) {
+      document.documentElement.classList.remove('light-mode');
+      document.documentElement.classList.add('dark-mode');
+      document.body.style.background = '#0f172a';
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+      document.documentElement.classList.add('light-mode');
+      document.body.style.background = '#ffffff';
+    }
   }, [isDarkMode]);
 
   return (
@@ -62,6 +58,10 @@ function App() {
         <Projects />
         <Contact />
       </main>
+
+      <footer className="site-footer">
+        <p>Available for work • Open to freelance, contract, and full-time roles</p>
+      </footer>
 
     </div>
   );

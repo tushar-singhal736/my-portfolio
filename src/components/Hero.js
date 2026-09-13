@@ -74,6 +74,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
+            <div className="availability-badge">Available for work</div>
             <h1 className="hero-name">{name}</h1>
 
             <div className="hero-typing">
@@ -110,7 +111,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
                 <a
-                  href="https://github.com/tushar-singhal736"
+                  href="https://github.com/tushar-singhal736/my-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon"
@@ -119,7 +120,7 @@ export default function Hero() {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/tushar-singhal-a51a40339/"
+                  href="https://www.linkedin.com/in/tushar-singhal-989376434/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon"
