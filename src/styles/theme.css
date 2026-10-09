@@ -1,0 +1,84 @@
+.light-mode,
+.light-mode html,
+.light-mode body {
+  background: #f8fafc;
+}
+
+.light-mode .navbar {
+  background: rgba(248, 250, 252, 0.85);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.light-mode .navbar-scrolled {
+  background: rgba(248, 250, 252, 0.97);
+}
+
+.light-mode .navbar-brand,
+.light-mode .nav-link:hover,
+.light-mode .hero-typing-accent,
+.light-mode .hero-tagline-tech,
+.light-mode .project-link,
+.light-mode .contact-top-label {
+  color: #6366f1;
+}
+
+.light-mode .nav-link {
+  color: #475569;
+}
+
+.light-mode .hamburger-line {
+  background: #0f172a;
+}
+
+.light-mode .mobile-menu {
+  background: #ffffff;
+  border-left: 1px solid #e2e8f0;
+}
+
+.light-mode .mobile-link {
+  color: #0f172a;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.light-mode .hero,
+.light-mode .about,
+.light-mode .skills-section,
+.light-mode .projects,
+.light-mode .contact-section {
+  background: #f8fafc;
+}
+
+.light-mode .hero-name,
+.light-mode #about .section-title,
+.light-mode #projects .section-title,
+.light-mode .sk-title {
+  color: #0f172a;
+}
+
+.light-mode .hero-typing-muted,
+.light-mode .hero-tagline,
+.light-mode .about-content p,
+.light-mode .projects-subtitle,
+.light-mode .project-card-content p,
+.light-mode .contact-hero-desc {
+  color: #475569;
+}
+
+.light-mode .social-icon,
+.light-mode .contact-social-link,
+.light-mode .sk-circle,
+.light-mode .project-card {
+  border-color: #e2e8f0;
+  background: #ffffff;
+}
+
+.light-mode .project-card-content h3 {
+  color: #0f172a;
+}
+
+.light-mode .contact-input,
+.light-mode .contact-textarea {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+}

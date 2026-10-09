@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
 :root {
   --bg: #020617;
   --bg-card: rgba(255, 255, 255, 0.03);
@@ -64,4 +62,63 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #818cf8;
+}
+
+html,
+body {
+  background: #020617;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --section-padding: 90px;
+  --section-padding-mobile: 72px;
+  --section-gap: 24px;
+}
+
+main > section {
+  padding: var(--section-padding) var(--section-gap);
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-padding: 64px;
+    --section-gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 48px;
+    --section-gap: 12px;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: var(--section-padding-mobile);
+    --section-gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 64px;
+    --section-gap: 16px;
+  }
 }

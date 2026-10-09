@@ -1,3 +1,4 @@
+import './Skills.css';
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { profile } from "../config/profile";
@@ -78,7 +79,7 @@ export default function Skills() {
         {/* ===== RIGHT IMAGE ===== */}
         <div className="sk-right">
           <motion.img
-            src="/developer.gif"
+            src="/assets/images/developer.gif"
             alt="developer animation"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

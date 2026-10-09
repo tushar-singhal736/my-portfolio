@@ -1,3 +1,4 @@
+import './Contact.css';
 import { useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { profile } from "../config/profile";

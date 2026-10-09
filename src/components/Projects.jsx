@@ -1,3 +1,4 @@
+import './Projects.css';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { profile } from '../config/profile';

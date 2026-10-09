@@ -1,3 +1,4 @@
+import './ScrollRunner.css';
 import { motion, useScroll } from 'framer-motion';
 
 export default function ScrollProgress() {

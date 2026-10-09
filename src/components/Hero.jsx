@@ -1,3 +1,4 @@
+import './Hero.css';
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { profile } from "../config/profile";
@@ -74,7 +75,6 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            <div className="availability-badge">Available for work</div>
             <h1 className="hero-name">{name}</h1>
 
             <div className="hero-typing">

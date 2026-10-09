@@ -1,3 +1,4 @@
+import './About.css';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { profile } from "../config/profile";
@@ -61,7 +62,7 @@ export default function About() {
             transition={{ duration: 0.75 }}
           >
             <img
-              src="/server.gif"
+              src="/assets/images/server.gif"
               alt="Developer Illustration"
               className="about-image"
             />

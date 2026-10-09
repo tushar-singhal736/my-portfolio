@@ -1,17 +1,6 @@
 ﻿# My Portfolio
 
-**Developer portfolio website built with React, Framer Motion, and responsive design.**
-
-## Overview
-
-This repository contains a portfolio website for showcasing projects, skills, and contact information. It includes:
-
-- Animated hero section with 3D hover effects
-- Dark/light theme toggle
-- Responsive project cards with hover motion
-- Skills section with animated skill badges
-- Contact form with Formspree integration
-- Deployment on Vercel
+A responsive developer portfolio built with React and Framer Motion.
 
 ## Run locally
 
@@ -20,20 +9,20 @@ npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it locally.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Build for production
+## Available commands
 
 ```bash
+npm test -- --watchAll=false
 npm run build
 ```
 
-## Project structure
+## Project layout
 
-- `src/` — React components and app logic
-- `public/` — static assets and site manifest
-- `src/config/profile.js` — profile data and project links
-
-## Deployment
-
-This app can be deployed to GitHub Pages, Netlify, or Vercel.
+- `src/components/` contains the portfolio sections and their stylesheets.
+- `src/config/profile.js` contains the profile, skills, and project data.
+- `src/styles/` contains shared and theme styles.
+- `public/assets/images/` contains the profile, section, and project images.
+- `public/assets/documents/` contains the resume.
+- `public/` contains the app HTML and browser manifest.

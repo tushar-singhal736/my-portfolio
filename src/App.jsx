@@ -6,7 +6,6 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './App.css';
 
 function App() {
 
@@ -58,10 +57,6 @@ function App() {
         <Projects />
         <Contact />
       </main>
-
-      <footer className="site-footer">
-        <p>Available for work • Open to freelance, contract, and full-time roles</p>
-      </footer>
 
     </div>
   );

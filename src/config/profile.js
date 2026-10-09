@@ -13,10 +13,10 @@ export const profile = {
   roleBadges: ['Full Stack Developer', 'MERN Stack Developer', 'React Developer'],
 
   // ----- PHOTOS -----
-  photo: 'meriimage.jpeg',
+  photo: '/assets/images/meriimage.jpeg',
 
   // ----- RESUME -----
-  resume: 'tusharresume.pdf',
+  resume: '/assets/documents/tusharresume.pdf',
   resumeLabel: 'Download Resume',
 
   // ----- ABOUT SECTION -----
@@ -72,7 +72,7 @@ export const profile = {
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Redux'],
       link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-      image: '/supernova.png',
+      image: '/assets/images/supernova.png',
     },
     {
       title: 'Quizz - CS Quiz Platform',
@@ -80,7 +80,7 @@ export const profile = {
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
       link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)',
-      image: '/quizapp.png',
+      image: '/assets/images/quizapp.png',
     },
     {
       title: 'Portfolio Website',
@@ -88,7 +88,7 @@ export const profile = {
       tech: ['React', 'Framer Motion', 'CSS', 'Formspree'],
       link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
-      image: '/image.png',
+      image: '/assets/images/image.png',
     },
   ],
 };
