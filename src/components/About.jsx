@@ -62,9 +62,11 @@ export default function About() {
             transition={{ duration: 0.75 }}
           >
             <img
-              src="/assets/images/server.gif"
-              alt="Developer Illustration"
+              src="/assets/images/server.webp"
+              alt="Laptop and cloud servers illustration"
               className="about-image"
+              loading="lazy"
+              decoding="async"
             />
           </motion.div>
 

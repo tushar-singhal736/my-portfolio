@@ -35,6 +35,11 @@
   transform: translateY(-2px);
 }
 
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
 .social-icon,
 .contact-social-link {
   width: 54px;
@@ -149,6 +154,17 @@
     min-width: 120px;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

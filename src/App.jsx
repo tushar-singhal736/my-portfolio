@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { MotionConfig } from 'framer-motion';
 import Navbar from './components/Navbar';
 import ScrollProgress from './components/ScrollRunner';
 import Hero from './components/Hero';
@@ -41,7 +42,8 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+    <MotionConfig reducedMotion="user">
+      <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
 
       <Navbar
         isDarkMode={isDarkMode}
@@ -58,7 +60,8 @@ function App() {
         <Contact />
       </main>
 
-    </div>
+      </div>
+    </MotionConfig>
   );
 }
 

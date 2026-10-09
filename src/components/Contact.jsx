@@ -8,27 +8,38 @@ export default function Contact() {
 const { contactFormUrl } = profile;
 
 const [sent,setSent]=useState(false);
+const [submitting,setSubmitting]=useState(false);
+const [formError,setFormError]=useState('');
 
 const handleSubmit = async (e)=>{
 
 e.preventDefault();
 
-const formData = new FormData(e.target);
+const form = e.currentTarget;
+const formData = new FormData(form);
+setSubmitting(true);
+setFormError('');
 
 try{
 
-await fetch(contactFormUrl,{
+const response = await fetch(contactFormUrl,{
 method:"POST",
 body:formData,
 headers:{Accept:"application/json"}
 });
 
+if (!response.ok) throw new Error('Contact service rejected the message');
+
 setSent(true);
-e.target.reset();
+form.reset();
 
 }catch(err){
 
-alert("Something went wrong");
+setFormError("We couldn't send your message. Please try again.");
+
+}finally{
+
+setSubmitting(false);
 
 }
 
@@ -56,7 +67,7 @@ Actively looking for new opportunities. My inbox is always open!
 
 {sent ? (
 
-<div className="contact-success-card">
+<div className="contact-success-card" role="status">
 
 <div className="contact-success-icon">OK</div>
 
@@ -73,7 +84,7 @@ Thanks for reaching out. I'll get back to you soon.
 </p>
 
 <button
-onClick={() => setSent(false)}
+onClick={() => { setSent(false); setFormError(''); }}
 className="contact-success-button"
 >
 
@@ -85,13 +96,13 @@ Send Another
 
 ) : (
 
-<form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit} aria-busy={submitting}>
 
 <div className="contact-form-grid">
 
 <div className="contact-form-group">
 
-<label className="contact-form-label">
+<label className="contact-form-label" htmlFor="contact-name">
 
 Name
 
@@ -99,6 +110,7 @@ Name
 
 <input
 className="contact-input"
+ id="contact-name"
  type="text"
  name="name"
  placeholder="Full Name"
@@ -109,7 +121,7 @@ className="contact-input"
 
 <div className="contact-form-group">
 
-<label className="contact-form-label">
+<label className="contact-form-label" htmlFor="contact-email">
 
 Email
 
@@ -117,6 +129,7 @@ Email
 
 <input
 className="contact-input"
+ id="contact-email"
  type="email"
  name="email"
  placeholder="your@email.com"
@@ -129,7 +142,7 @@ className="contact-input"
 
 <div className="contact-form-group">
 
-<label className="contact-form-label">
+<label className="contact-form-label" htmlFor="contact-message">
 
 Message
 
@@ -137,6 +150,7 @@ Message
 
 <textarea
 className="contact-textarea"
+ id="contact-message"
  name="message"
  rows={5}
  placeholder="Hello Tushar, I'd like to work with you..."
@@ -145,14 +159,17 @@ className="contact-textarea"
 
 </div>
 
+{formError && <p className="contact-form-error" role="alert">{formError}</p>}
+
 <div className="contact-form-actions">
 
 <button
  type="submit"
  className="contact-btn"
+ disabled={submitting}
 >
 
-Send Message -&gt;
+{submitting ? 'Sending...' : 'Send Message -&gt;'}
 
 </button>
 

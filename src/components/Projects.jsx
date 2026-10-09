@@ -49,7 +49,12 @@ export default function Projects() {
               {/* SCREENSHOT */}
               {project.image && (
                 <div className="project-img-wrap">
-                  <img src={project.image} alt={project.title} />
+                  <img
+                    src={project.image}
+                    alt={`${project.title} project screenshot`}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               )}
 

@@ -13,7 +13,7 @@ export const profile = {
   roleBadges: ['Full Stack Developer', 'MERN Stack Developer', 'React Developer'],
 
   // ----- PHOTOS -----
-  photo: '/assets/images/meriimage.jpeg',
+  photo: '/assets/images/merimage.png',
 
   // ----- RESUME -----
   resume: '/assets/documents/tusharresume.pdf',
@@ -70,15 +70,15 @@ export const profile = {
       title: 'SuperNova - E-Commerce',
       desc: 'Full-stack e-commerce platform with product listings, cart, checkout, user authentication, and admin dashboard.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Redux'],
-      link: 'https://github.com/tushar-singhal736/my-portfolio',
+      link: 'https://github.com/tushar-singhal736/E-commerce-website',
       gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-      image: '/assets/images/supernova.png',
+      image: '/assets/images/supernova.webp',
     },
     {
       title: 'Quizz - CS Quiz Platform',
       desc: 'Interactive quiz platform covering DSA, DBMS, OS, Networks & more. Features timed quizzes, leaderboard, and 375+ questions.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
-      link: 'https://github.com/tushar-singhal736/my-portfolio',
+      link: 'https://github.com/tushar-singhal736/quiz-app',
       gradient: 'linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)',
       image: '/assets/images/quizapp.png',
     },
@@ -88,7 +88,7 @@ export const profile = {
       tech: ['React', 'Framer Motion', 'CSS', 'Formspree'],
       link: 'https://github.com/tushar-singhal736/my-portfolio',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
-      image: '/assets/images/image.png',
+      image: '/assets/images/portfolio.webp',
     },
   ],
 };

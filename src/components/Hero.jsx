@@ -59,7 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.55, type: 'spring', stiffness: 90, damping: 12 }}
           >
             <div className="hero-photo-frame">
-              <img src={photo} alt={name} className="hero-photo-img" />
+              <img src={photo} alt={`Portrait of ${name}`} className="hero-photo-img" fetchPriority="high" />
             </div>
             <motion.div
               className="hero-photo-glow"

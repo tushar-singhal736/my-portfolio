@@ -126,6 +126,14 @@
   box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
 }
 
+.contact-input:focus-visible,
+.contact-textarea:focus-visible,
+.contact-btn:focus-visible,
+.contact-success-button:focus-visible {
+  outline: 2px solid #a5b4fc;
+  outline-offset: 3px;
+}
+
 .contact-textarea {
   resize: vertical;
   min-height: 140px;
@@ -136,6 +144,12 @@
   gap: 12px;
   justify-content: center;
   margin-top: 24px;
+}
+
+.contact-form-error {
+  margin-top: 16px;
+  color: #fca5a5;
+  font-weight: 600;
 }
 
 .contact-btn {
@@ -154,6 +168,12 @@
 .contact-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.contact-btn:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
 }
 
 .contact-success-card {

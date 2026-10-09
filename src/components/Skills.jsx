@@ -80,10 +80,12 @@ export default function Skills() {
         <div className="sk-right">
           <motion.img
             src="/assets/images/developer.gif"
-            alt="developer animation"
+            alt="Animated illustration of a developer working at a computer"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
