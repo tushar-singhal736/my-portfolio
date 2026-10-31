@@ -1,6 +1,6 @@
 import './Contact.css';
 import { useState } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedinIn, FaSpinner } from "react-icons/fa";
 import { profile } from "../config/profile";
 
 export default function Contact() {
@@ -167,9 +167,15 @@ className="contact-textarea"
  type="submit"
  className="contact-btn"
  disabled={submitting}
+ aria-busy={submitting}
 >
 
-{submitting ? 'Sending...' : 'Send Message -&gt;'}
+<span>{submitting ? 'Sending...' : 'Send Message'}</span>
+{submitting ? (
+<FaSpinner className="contact-btn-icon contact-btn-spinner" aria-hidden="true" />
+) : (
+<FaArrowRight className="contact-btn-icon contact-btn-arrow" aria-hidden="true" />
+)}
 
 </button>
 

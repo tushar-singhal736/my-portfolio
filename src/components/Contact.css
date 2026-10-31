@@ -154,20 +154,47 @@
 
 .contact-btn {
   padding: 12px 32px;
+  min-height: 48px;
   border: none;
   border-radius: 8px;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #fff;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
   font-family: 'Outfit', sans-serif;
 }
 
 .contact-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.contact-btn-icon {
+  flex: 0 0 auto;
+}
+
+.contact-btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.contact-btn:hover .contact-btn-arrow {
+  transform: translateX(3px);
+}
+
+.contact-btn-spinner {
+  animation: contact-btn-spin 0.8s linear infinite;
+}
+
+@keyframes contact-btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .contact-btn:disabled {
